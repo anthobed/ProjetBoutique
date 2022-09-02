@@ -1,0 +1,514 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.slider {
+  overflow: hidden;
+  max-width: 100%;
+}
+.slides {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: calc(500px * 4);
+  height: 700px;
+  animation: glisse 15s infinite;
+}
+.slide {
+  justify-content: space-around;
+  max-width: 650px;
+  height: 100%;
+}
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+
+  10% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateX(-620px);
+  }
+}
+.slide img {
+  width: 650px;
+  height: 700px;
+  opacity: 75%;
+}
+.titre {
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  background-color: white;
+
+  box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: gray;
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  font: black;
+}
+.bureau {
+  background-image: url(./Image/Bureau4.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100%;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 40px;
+}
+
+li:hover {
+  height: 80%;
+  width: 20%;
+  cursor: pointer;
+}
+.chambre {
+  background-image: url(./Image/Chambre4.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  height: 100%;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 40px;
+}
+
+.chambre:hover {
+  cursor: pointer;
+}
+.salon {
+  background-image: url(./Image/Salon4.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100%;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.salon:hover {
+  cursor: pointer;
+}
+
+.cuisine {
+  background-image: url(./Image/Cuisine4.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  height: 100%;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 40px;
+}
+.cuisine:hover {
+  cursor: pointer;
+}
+
+.sectionbureau {
+  display: grid;
+  grid-template-columns: 75px 15px 200px 15px 500px 15px;
+  grid-template-rows: 15px 200px 15px 200px 15px 200px 15px;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(./Image/Bureau4.jpg);
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-size: 100% 100%;
+}
+.sectionchambre {
+  display: grid;
+  grid-template-columns: 75px 15px 200px 15px 500px 15px;
+  grid-template-rows: 15px 200px 15px 200px 15px 200px 15px;
+  width: 100%;
+
+  background-image: url(./Image/Chambre4.jpg);
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.sectionsalon {
+  display: grid;
+  grid-template-columns: 75px 15px 200px 15px 500px 15px;
+  grid-template-rows: 15px 200px 15px 200px 15px 200px 15px;
+  width: 100%;
+
+  background-image: url(./Image/Salon4.jpg);
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.sectioncuisine {
+  display: grid;
+  grid-template-columns: 75px 15px 200px 15px 500px 15px;
+  grid-template-rows: 15px 200px 15px 200px 15px 200px 15px;
+  width: 100%;
+
+  background-image: url(./Image/Cuisine4.jpg);
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+section img {
+  height: 200px;
+  width: 200px;
+}
+.item1 {
+  display: flex;
+  height: 200px;
+  width: 715px;
+  gap: 15px;
+  background-color: white;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.item1:hover {
+  height: 230px;
+  width: 745px;
+  cursor: pointer;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.item1:hover img {
+  height: 230px;
+  width: 230px;
+}
+.item2 {
+  display: flex;
+  height: 200px;
+  width: 715px;
+  gap: 15px;
+  background-color: white;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.item2:hover {
+  height: 230px;
+  width: 745px;
+  cursor: pointer;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.item2:hover img {
+  height: 230px;
+  width: 230px;
+}
+.item3 {
+  display: flex;
+  height: 200px;
+  width: 715px;
+  gap: 15px;
+  background-color: white;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 8;
+}
+.item3:hover {
+  height: 230px;
+  width: 745px;
+  cursor: pointer;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+.item3:hover img {
+  height: 230px;
+  width: 230px;
+}
+
+footer {
+  width: 100%;
+  height: 75px;
+  background-color: blue;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+
+  position: absolute;
+}
+
+.sticky ul {
+  display: flex;
+  width: 700px;
+  height: 400px;
+  position: fixed;
+  left: 60%;
+  top: 30%;
+
+  align-items: center;
+  flex-direction: row;
+  background-color: black;
+  gap: 0px;
+  padding: 0px;
+}
+
+.sticky .bureau {
+  background-position: center;
+  background-size: 700px 100px;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100px;
+  width: 700px;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+}
+.sticky li:hover {
+  cursor: pointer;
+  background-size: 650px 90px;
+}
+
+.sticky .chambre {
+  background-position: center;
+  background-size: 700px 100px;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100px;
+  width: 700px;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+}
+.sticky .salon {
+  background-position: center;
+  background-size: 700px 100px;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100px;
+  width: 700px;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+}
+
+.sticky .cuisine {
+  background-position: center;
+  background-size: 700px 100px;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100px;
+  width: 700px;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+}
+
+@media screen and (max-width: 640px) {
+  .slides {
+    display: flex;
+    animation: glisse 15s infinite;
+    width: 100%;
+    height: 400px;
+  }
+  .slide {
+    width: 310px;
+    height: 400px;
+  }
+  .slide img {
+    width: 310px;
+    height: 400px;
+  }
+  .titre {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+    background-color: white;
+    font-size: 10px;
+  }
+  ul {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: gray;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .bureau {
+    font-size: 10px;
+  }
+  .chambre {
+    font-size: 10px;
+  }
+  .salon {
+    font-size: 10px;
+  }
+  .cuisine {
+    font-size: 10px;
+  }
+  .sectionbureau {
+    grid-template-columns: 7.5px 7.5px 75px 7.5px 225px 7.5px;
+    grid-template-rows: 7.5px 75px 7.5px 75px 7.5px 75px 7.5px;
+  }
+  .sectionbureau h2 {
+    font-size: 15px;
+  }
+  .sectionbureau p {
+    font-size: 5px;
+  }
+  .sectionbureau h3 {
+    font-size: 10px;
+  }
+
+  .sectionchambre {
+    grid-template-columns: 7.5px 7.5px 75px 7.5px 225px 7.5px;
+    grid-template-rows: 7.5px 75px 7.5px 75px 7.5px 75px 7.5px;
+  }
+  .sectionchambre h2 {
+    font-size: 15px;
+  }
+  .sectionchambre p {
+    font-size: 5px;
+  }
+  .sectionchambre h3 {
+    font-size: 10px;
+  }
+
+  .sectionsalon {
+    grid-template-columns: 7.5px 7.5px 75px 7.5px 225px 7.5px;
+    grid-template-rows: 7.5px 75px 7.5px 75px 7.5px 75px 7.5px;
+  }
+  .sectionsalon h2 {
+    font-size: 15px;
+  }
+  .sectionsalon p {
+    font-size: 5px;
+  }
+  .sectionsalon h3 {
+    font-size: 10px;
+  }
+
+  .sectioncuisine {
+    grid-template-columns: 7.5px 7.5px 75px 7.5px 225px 7.5px;
+    grid-template-rows: 7.5px 75px 7.5px 75px 7.5px 75px 7.5px;
+  }
+  .sectioncuisine h2 {
+    font-size: 15px;
+  }
+  .sectioncuisine p {
+    font-size: 5px;
+  }
+  .sectioncuisine h3 {
+    font-size: 10px;
+  }
+
+  section img {
+    height: 75px;
+    width: 75px;
+  }
+  .item1 {
+    display: flex;
+    height: 75px;
+    width: 200px;
+    gap: 15px;
+  }
+  .item1:hover {
+    height: 90px;
+    width: 215px;
+  }
+  .item1:hover img {
+    height: 90px;
+    width: 90px;
+  }
+  .item1 h2 {
+    font-size: 10px;
+  }
+  .item2 {
+    display: flex;
+    height: 75px;
+    width: 200px;
+    gap: 15px;
+  }
+  .item2:hover {
+    height: 90px;
+    width: 215px;
+  }
+  .item2:hover img {
+    height: 90px;
+    width: 90px;
+  }
+  .item2 h2 {
+    font-size: 10px;
+  }
+  .item3 {
+    display: flex;
+    height: 75px;
+    width: 200px;
+    gap: 15px;
+  }
+  .item3:hover {
+    height: 90px;
+    width: 215px;
+  }
+  .item3:hover img {
+    height: 90px;
+    width: 90px;
+  }
+  .item3 h2 {
+    font-size: 10px;
+  }
+
+  footer {
+    font-size: 7.5px;
+    height: 32.5px;
+  }
+}
